@@ -1,64 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bar Navigasi</title>
-    <style>
-        body {
-            background-color: rgb(83, 199, 68);
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Halaman PKn</title>
+  <style>
+    body {
+      background-color: #e0f2e9;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
 
-        header{
-            background-color: rgb(38, 216, 52);
-            padding: 7px 0;
-            text-align: center;
-        }
+    header {
+      background-color: #4caf50;
+      padding: 15px 0;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
 
-        header a{
-            color: rgb(3, 75, 11);
-            font-size: 15px;
-            text-decoration: none;
-            margin: 0 10px;
-            transition: color 0.3s ease;
-        }
+    header a {
+      color: white;
+      font-size: 16px;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
 
-        header a:hover{
-            color: rgb(33, 90, 19);
-        }
+    header a:hover {
+      color: #c8f5d2;
+    }
 
-        h1{
-            text-align: center;
-            margin-top: 40px;
-            font-size: 30px;
-            color: rgb(0, 0, 0);
+    h1 {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 32px;
+      color: #333;
+    }
 
-        }
-    </style>
+    .content {
+      max-width: 900px;
+      margin: 40px auto;
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .section {
+      display: flex;
+      align-items: flex-start;
+      gap: 20px;
+      margin-bottom: 40px;
+      flex-wrap: wrap;
+    }
+
+    .section img {
+      max-width: 250px;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .section p {
+      font-size: 18px;
+      line-height: 1.6;
+      color: #444;
+      flex: 1;
+      text-align: justify;
+    }
+
+    @media (max-width: 768px) {
+      .section {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .section img {
+        max-width: 100%;
+      }
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <a href="index.html">Home</a>
-        <a href="agama.html">Agama</a>
-        <a href="pkn.html">PKn</a>
-        <a href="bahasaindonesia.html">Bahasa Indonesia</a>
-    </header>
 
-    <h1>Ini adalah halaman PKn</h1>
-    <table border="3px"> 
-        <tr style="background-color: mediumseagreen;">
-            <th>Dalam pelajaran Pendidikan Pancasila saya belajar tentang Indonesia sebagai dasar negara, kearifan lokal,
-                budaya, tradisi, dll. Sekarang kami sedang belajar tentang kearifan lokal dan kami membuat board games
-            sebagai AP semester 2. </th>
-        </tr>
-        <tr>
-            <th>
-            <img src="congklak.jpg">
-             </th>
-        </tr>
-    </table>
+  <header>
+    <a href="index.html">Home</a>
+    <a href="agama.html">Agama</a>
+    <a href="pkn.html">PKn</a>
+    <a href="bahasaindonesia.html">Bahasa Indonesia</a>
+    <a href="english.html">English</a>
+    <a href="ips.html">IPS</a>
+    <a href="mandarin.html">Mandarin</a>
+  </header>
+
+  <h1>Kunjungan National Palace Museum dan Chiang Kai Shek Memorial Hall</h1>
+
+  <div class="content">
+    <div class="section">
+      <p>
+        Sejarah awalnya National Palace Museum adalah dulu, semua barang koleksi diambil dan dipindahkan dengan alasan perang, dan museum ini dibangun untuk mempertunjukkan koleksi tersebut kepada publik.
+      </p>
+      <img src="IMG_0333.jpg" alt="National Palace Museum">
+    </div>
+
+    <div class="section">
+      <p>
+        Salah satu artefak yang ada di National Palace Museum adalah "daging babi". Artefak ini bukan daging sungguhan, melainkan batu yang dibentuk menyerupai daging babi. Dulu, rakyat memberikan artefak ini sebagai hadiah kepada raja. Maknanya sangat dalam: rakyat sangat kelaparan, sementara raja bisa makan daging sebanyak-banyaknya. Setelah menerima hadiah tersebut, sang raja menangis terharu.
+      </p>
+      <img src="IMG_0336.jpg" alt="Artefak Daging Babi">
+    </div>
+
+    <div class="section">
+      <p>
+        Masa lalu Chiang Kai Shek Memorial Hall adalah tempat peringatan kemerdekaan Taiwan, dan sekarang menjadi museum.
+      </p>
+      <img src="IMG_0348.jpg" alt="Chiang Kai Shek Memorial Hall">
+    </div>
+
+    <div class="section">
+      <p>
+        Peran Chiang Kai Shek dalam membentuk Taiwan sebagai negara modern adalah dengan membangun institusi yang memperkuat identitas Taiwan sebagai Republik Tiongkok (ROC).
+      </p>
+      <img src="IMG_0343.jpg" alt="Chiang Kai Shek Statue">
+    </div>
+  </div>
+
 </body>
 </html>
+
